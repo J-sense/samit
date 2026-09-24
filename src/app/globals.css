@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #010208;
+  --foreground: #ffffff;
+  --accent-purple: #7c3aed;
+  --accent-purple-light: #8b5cf6;
+  --card-bg: rgba(18, 12, 30, 0.7);
+  --card-border: rgba(255, 255, 255, 0.08);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Figma Background Ambient Purple Glow */
+.bg-figma-radial {
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.18) 0%, transparent 40%),
+    radial-gradient(circle at 90% 70%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 50% 90%, rgba(124, 58, 237, 0.15) 0%, transparent 50%);
+}
+
+/* Metallic Silver Text Gradient */
+.text-gradient-silver {
+  background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 60%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Primary Purple Button */
+.btn-purple-primary {
+  background: #7c3aed;
+  color: #ffffff;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-purple-primary:hover {
+  background: #6d28d9;
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Outline Dark Button */
+.btn-outline-dark {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-outline-dark:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Figma Translucent Dark Card */
+.figma-card {
+  background: rgba(18, 12, 30, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #010208;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #23183d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b2a63;
 }
