@@ -7,12 +7,6 @@ import { educationData } from "@/data/portfolioData";
 export default function EducationSection() {
   return (
     <section id="education" className="py-24 relative bg-[#010208] overflow-hidden border-t border-white/5">
-      {/* Background Radial Glow (Placed BEHIND -z-10) */}
-      <div
-        className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[500px] h-[500px] rounded-full blur-[160px] pointer-events-none -z-10 opacity-20"
-        style={{ background: "#4F46E5" }}
-      />
-
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">

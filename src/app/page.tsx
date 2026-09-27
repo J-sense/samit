@@ -5,6 +5,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import AboutSection from "@/components/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
 import FooterSection from "@/components/FooterSection";
 import FloatingContactWidget from "@/components/FloatingContactWidget";
@@ -26,6 +27,7 @@ export default function Home() {
       <CaseStudiesSection />
       <AboutSection />
       <ExperienceSection />
+      <EducationSection />
       <ContactSection />
       <FooterSection />
       <FloatingContactWidget />
