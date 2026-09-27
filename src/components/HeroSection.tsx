@@ -6,9 +6,9 @@ import { ArrowRight } from "lucide-react";
 export default function HeroSection() {
   return (
     <section id="hero" className="relative pt-12 pb-20 sm:pt-36 sm:pb-28 min-h-[95vh] flex items-center bg-[#010208] overflow-hidden">
-      {/* Top Left Ambient Radial Glow (#7127BA33) */}
+      {/* Top Left Corner Soft Ambient Glow */}
       <div
-        className="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-[650px] h-[650px] rounded-full blur-[140px] pointer-events-none"
+        className="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-[650px] h-[650px] rounded-full blur-[140px] pointer-events-none z-0"
         style={{ background: "#7127BA33" }}
       />
 

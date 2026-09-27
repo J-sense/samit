@@ -1,4 +1,4 @@
-import { ProfileDetails, Project, SkillCategory, ExperienceItem } from "@/types/portfolio";
+import { ProfileDetails, Project, SkillCategory, ExperienceItem, EducationItem } from "@/types/portfolio";
 
 export const profileDetails: ProfileDetails = {
   name: "Samit",
@@ -81,27 +81,67 @@ export const skillsCategories: SkillCategory[] = [
 export const experiencesData: ExperienceItem[] = [
   {
     id: "exp-1",
-    role: "Lead UI/UX Designer & Frontend Engineer",
-    company: "Studio Craft",
-    period: "2024 - Present",
-    location: "Remote",
-    description:
-      "Crafting high-impact UI/UX interfaces and interactive web experiences. Designing component libraries and prototyping complex product workflows.",
+    role: "Senior Executive (Team Lead)",
+    company: "Join Venture AI",
+    period: "01/08/2026 to Present",
+    location: "Dhaka, Bangladesh",
+    statusTag: "Now",
+    isCurrent: true,
+    description: "Leading technology strategy, UI/UX execution, and engineering workflows as Team Lead at Join Venture AI.",
     achievements: [
-      "Designed and launched 30+ live web projects with 99% client satisfaction.",
-      "Established unified design system used across web and mobile platforms.",
-    ],
+      "Supervising development teams and leading product interaction design.",
+      "Architecting user-centric solutions and managing sprint deliverables."
+    ]
   },
   {
     id: "exp-2",
-    role: "UI/UX Designer",
-    company: "Pixel Motion",
-    period: "2022 - 2024",
-    location: "Dhaka",
-    description:
-      "Specialized in user experience design, wireframing, high-fidelity interactive prototypes, and design-to-code handover.",
+    role: "Development Team Lead",
+    company: "Join Venture AI",
+    period: "01/03/2026 to 31/07/2026",
+    location: "Dhaka, Bangladesh",
+    statusTag: "Previous",
+    description: "Led frontend and full-stack development initiatives, directing technical design and team code reviews.",
     achievements: [
-      "Crafted responsive interface designs for e-commerce, SaaS, and fintech clients.",
-    ],
+      "Guided team deliverables and technical architecture for AI applications."
+    ]
   },
+  {
+    id: "exp-3",
+    role: "UI/UX Designer",
+    company: "Join Venture AI",
+    period: "01/02/2025 to 29/02/2026",
+    location: "Dhaka, Bangladesh",
+    description: "Created high-fidelity designs, interactive prototypes, and design systems for web & mobile apps.",
+    achievements: [
+      "Crafted intuitive user interfaces, wireframes, and design specs."
+    ]
+  },
+  {
+    id: "exp-4",
+    role: "Jr UI/UX Designer",
+    company: "Creative Soft LTD",
+    period: "01/10/2024 to 30/01/2025",
+    location: "Dhaka, Bangladesh",
+    description: "Assisted in UI design, visual assets, wireframing, and interactive prototype development.",
+    achievements: [
+      "Designed responsive UI layouts and component libraries."
+    ]
+  }
 ];
+
+export const educationData: EducationItem[] = [
+  {
+    id: "edu-1",
+    degree: "B.Sc. in Computer Science & Engineering",
+    institution: "Daffodil International University",
+    year: "2020",
+    cgpa: "3.80 / 4.00",
+    description: "Graduated with High Distinction (3.80 CGPA). Focused on Computer Science fundamentals, Software Engineering, HCI, algorithms, and interactive UI/UX systems.",
+    highlights: [
+      "Graduated with High Honors — CGPA: 3.80 / 4.00",
+      "Specialized in Human-Computer Interaction & Web Systems",
+      "Active participant in software design and development projects"
+    ]
+  }
+];
+

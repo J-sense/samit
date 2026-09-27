@@ -25,9 +25,9 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="relative py-24 bg-[#010208] overflow-hidden">
-      {/* Central Purple Radial Glow Overlay - Placed ABOVE (z-20) text & form cards */}
+      {/* Central Purple Radial Glow Overlay */}
       <div
-        className="absolute top-[150px] left-1/2 -translate-x-1/2 w-[550px] h-[260px] rounded-full blur-[85px] pointer-events-none z-20 mix-blend-screen opacity-95"
+        className="absolute top-[150px] left-1/2 -translate-x-1/2 w-[650px] h-[350px] rounded-full blur-[110px] pointer-events-none z-0 opacity-85"
         style={{
           background:
             "radial-gradient(ellipse at center, rgba(113, 39, 186, 0.85) 0%, #7127BA 45%, rgba(113, 39, 186, 0.25) 75%, transparent 90%)",

@@ -20,9 +20,21 @@ export interface ExperienceItem {
   role: string;
   company: string;
   period: string;
-  location: string;
-  description: string;
-  achievements: string[];
+  location?: string;
+  description?: string;
+  achievements?: string[];
+  statusTag?: string;
+  isCurrent?: boolean;
+}
+
+export interface EducationItem {
+  id: string;
+  degree: string;
+  institution: string;
+  year: string;
+  cgpa: string;
+  description?: string;
+  highlights?: string[];
 }
 
 export interface ProfileDetails {

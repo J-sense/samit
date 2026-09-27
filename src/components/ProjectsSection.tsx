@@ -26,9 +26,14 @@ const projects = [
 export default function ProjectsSection() {
   return (
     <section id="projects" className="relative py-24 bg-[#010208] overflow-hidden">
-      {/* Bottom Purple Ambient Glow matching Figma */}
-
-
+      {/* Background Purple Radial Glow */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[500px] rounded-full blur-[110px] pointer-events-none z-0 opacity-85"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, rgba(113, 39, 186, 0.85) 0%, #7127BA 45%, rgba(113, 39, 186, 0.25) 75%, transparent 90%)",
+        }}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
