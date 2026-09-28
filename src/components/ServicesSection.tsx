@@ -7,7 +7,7 @@ export default function ServicesSection() {
     <section id="services" className="relative py-20 bg-[#010208] overflow-hidden">
       {/* Central Purple Glow Overlay */}
       <div
-        className="absolute top-[120px] left-1/2 -translate-x-1/2 w-[650px] h-[500px] rounded-full blur-[110px] pointer-events-none z-0 opacity-85"
+        className="absolute top-[120px] left-1/2 -translate-x-1/2 w-[650px] h-[250px] rounded-full blur-[110px] pointer-events-none z-0 opacity-85"
         style={{
           background:
             "radial-gradient(ellipse at center, rgba(113, 39, 186, 0.85) 0%, #7127BA 45%, rgba(113, 39, 186, 0.25) 75%, transparent 90%)",

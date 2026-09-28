@@ -8,13 +8,7 @@ export default function FooterSection() {
   return (
     <footer className="relative bg-[#010208] py-20 overflow-hidden">
       {/* Background Purple Radial Glow */}
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] rounded-full blur-[110px] pointer-events-none z-0 opacity-85"
-        style={{
-          background:
-            "radial-gradient(ellipse at center, rgba(113, 39, 186, 0.85) 0%, #7127BA 45%, rgba(113, 39, 186, 0.25) 75%, transparent 90%)",
-        }}
-      />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12 relative z-10">
         {/* Title & Subtitle */}
         <div className="space-y-3">
@@ -96,8 +90,8 @@ export default function FooterSection() {
 
         {/* Bottom Copyright Line */}
         <div className="pt-8 text-xs text-[#6e6382] flex items-center justify-center gap-1.5 font-light">
-          <span>Made with</span>
-          <span className="text-red-500 text-sm">❣️</span>
+          <span>Made</span>
+          <span className="text-red-500 text-sm"></span>
           <span>by</span>
           <strong className="font-bold text-white">Samit Protim Das</strong>
         </div>

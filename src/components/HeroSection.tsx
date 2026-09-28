@@ -67,7 +67,10 @@ export default function HeroSection() {
               </a>
 
               <a
-                href="#contact"
+                href="/My Resume.pdf"
+                download="My_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-4 rounded-full text-xs font-bold uppercase tracking-wider btn-outline-dark"
               >
                 DOWNLOAD CV

@@ -21,6 +21,7 @@ export interface ExperienceItem {
   company: string;
   period: string;
   location?: string;
+  summary?: string;
   description?: string;
   achievements?: string[];
   statusTag?: string;

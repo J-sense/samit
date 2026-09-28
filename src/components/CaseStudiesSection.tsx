@@ -56,7 +56,7 @@ export default function CaseStudiesSection() {
     <section id="case-studies" className="relative py-24 bg-[#010208] overflow-hidden">
       {/* Central Purple Glow Overlay */}
       <div
-        className="absolute top-[60px] left-1/2 -translate-x-1/2 w-[650px] h-[500px] rounded-full blur-[110px] pointer-events-none z-0 opacity-85"
+        className="absolute top-[140px] left-1/2 -translate-x-1/2 w-[650px] h-[300px] rounded-full blur-[110px] pointer-events-none z-0 opacity-85"
         style={{
           background:
             "radial-gradient(ellipse at center, rgba(113, 39, 186, 0.85) 0%, #7127BA 45%, rgba(113, 39, 186, 0.25) 75%, transparent 90%)",
@@ -83,11 +83,10 @@ export default function CaseStudiesSection() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`relative px-6 py-2.5 rounded-full text-xs font-semibold tracking-wide transition-all ${
-                  isActive
-                    ? "bg-[#7127BA] text-white shadow-lg shadow-[#7127BA]/30"
-                    : "bg-[#180f2d]/80 text-[#94a3b8] border border-[#261a45] hover:text-white hover:border-[#7127BA]/40"
-                }`}
+                className={`relative px-6 py-2.5 rounded-full text-xs font-semibold tracking-wide transition-all ${isActive
+                  ? "bg-[#7127BA] text-white shadow-lg shadow-[#7127BA]/30"
+                  : "bg-[#180f2d]/80 text-[#94a3b8] border border-[#261a45] hover:text-white hover:border-[#7127BA]/40"
+                  }`}
               >
                 {cat}
               </button>

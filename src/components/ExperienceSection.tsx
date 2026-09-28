@@ -1,10 +1,22 @@
 "use client";
 
+import { useState } from "react";
 import { experiencesData } from "@/data/portfolioData";
-import { Briefcase, Calendar, MapPin, CheckCircle } from "lucide-react";
-import { motion } from "framer-motion";
+import { Briefcase, Calendar, MapPin, CheckCircle, ChevronDown, ChevronUp } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function ExperienceSection() {
+  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({
+    "exp-1": false,
+  });
+
+  const toggleCollapse = (id: string) => {
+    setExpandedItems((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
+
   return (
     <section id="experience" className="py-24 relative bg-[#010208] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -40,9 +52,11 @@ export default function ExperienceSection() {
           </motion.p>
         </div>
 
-        {/* Timeline Container (Original Design) */}
+        {/* Timeline Container */}
         <div className="max-w-4xl mx-auto space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-1/2 before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-purple-500 before:via-indigo-500 before:to-slate-800">
           {experiencesData.map((item, idx) => {
+            const isExpanded = !!expandedItems[item.id];
+
             return (
               <motion.div
                 key={item.id}
@@ -75,21 +89,55 @@ export default function ExperienceSection() {
                   <h3 className="text-xl font-bold text-white mb-0.5">{item.role}</h3>
                   <div className="text-sm font-semibold text-purple-400">{item.company}</div>
 
-                  {item.description && (
-                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">
-                      {item.description}
+                  {item.summary && !isExpanded && (
+                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-light pt-1">
+                      {item.summary}
                     </p>
                   )}
 
-                  {item.achievements && item.achievements.length > 0 && (
-                    <ul className="space-y-1.5 pt-2">
-                      {item.achievements.map((ach, aIdx) => (
-                        <li key={aIdx} className="text-xs text-slate-400 flex items-start gap-2">
-                          <CheckCircle className="w-3.5 h-3.5 text-emerald-400 mt-0.5 shrink-0" />
-                          <span>{ach}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  {/* Collapse / Expand Toggle Button & Collapsible Description */}
+                  {item.description && (
+                    <div className="pt-2">
+                      <button
+                        onClick={() => toggleCollapse(item.id)}
+                        className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-purple-500/10 hover:bg-purple-500/20 border border-purple-500/30 text-purple-300 text-xs font-semibold transition-all duration-200 cursor-pointer shadow-sm"
+                        aria-expanded={isExpanded}
+                      >
+                        <span>{isExpanded ? "Collapse" : "Expand Details"}</span>
+                        {isExpanded ? (
+                          <ChevronUp className="w-3.5 h-3.5 text-purple-400" />
+                        ) : (
+                          <ChevronDown className="w-3.5 h-3.5 text-purple-400" />
+                        )}
+                      </button>
+
+                      <AnimatePresence>
+                        {isExpanded && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.35, ease: "easeInOut" }}
+                            className="overflow-hidden pt-3 space-y-3"
+                          >
+                            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-light bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80">
+                              {item.description}
+                            </p>
+
+                            {item.achievements && item.achievements.length > 0 && (
+                              <ul className="space-y-1.5 pt-1">
+                                {item.achievements.map((ach, aIdx) => (
+                                  <li key={aIdx} className="text-xs text-slate-400 flex items-start gap-2">
+                                    <CheckCircle className="w-3.5 h-3.5 text-emerald-400 mt-0.5 shrink-0" />
+                                    <span>{ach}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
                   )}
                 </div>
               </motion.div>

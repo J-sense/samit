@@ -81,51 +81,42 @@ export const skillsCategories: SkillCategory[] = [
 export const experiencesData: ExperienceItem[] = [
   {
     id: "exp-1",
-    role: "Senior Executive (Team Lead)",
+    role: "UI/UX Designer",
     company: "Join Venture AI",
-    period: "01/08/2026 to Present",
+    period: "1 March 2026 - Present",
     location: "Dhaka, Bangladesh",
     statusTag: "Now",
     isCurrent: true,
-    description: "Leading technology strategy, UI/UX execution, and engineering workflows as Team Lead at Join Venture AI.",
-    achievements: [
-      "Supervising development teams and leading product interaction design.",
-      "Architecting user-centric solutions and managing sprint deliverables."
-    ]
+    summary:
+      "Designing intuitive, user-friendly, and visually engaging digital experiences for web and mobile applications.",
+    description:
+      "As a UI/UX Designer, I am responsible for designing intuitive, user-friendly, and visually engaging digital experiences for web and mobile applications. My responsibilities include understanding project requirements, conducting user research, creating user flows, wireframes, prototypes, and high-fidelity UI designs. I work closely with clients, project managers, and developers to translate business requirements into effective design solutions and ensure accurate design implementation. I also maintain design consistency, improve usability, review implemented interfaces, incorporate feedback, and stay updated with the latest UI/UX trends and best practices to continuously enhance the overall user experience."
   },
   {
     id: "exp-2",
-    role: "Development Team Lead",
+    role: "UI/UX Designer",
     company: "Join Venture AI",
-    period: "01/03/2026 to 31/07/2026",
+    period: "01 Feb 2025 - 28 Feb 2026",
     location: "Dhaka, Bangladesh",
     statusTag: "Previous",
-    description: "Led frontend and full-stack development initiatives, directing technical design and team code reviews.",
-    achievements: [
-      "Guided team deliverables and technical architecture for AI applications."
-    ]
+    isCurrent: false,
+    summary:
+      "Created high-fidelity designs, interactive prototypes, and design systems for web & mobile applications.",
+    description:
+      "Created high-fidelity designs, interactive prototypes, and design systems for web & mobile apps. Conducted user interface reviews, component library management, and collaborated closely with cross-functional development teams to deliver intuitive digital products."
   },
   {
     id: "exp-3",
-    role: "UI/UX Designer",
-    company: "Join Venture AI",
-    period: "01/02/2025 to 29/02/2026",
-    location: "Dhaka, Bangladesh",
-    description: "Created high-fidelity designs, interactive prototypes, and design systems for web & mobile apps.",
-    achievements: [
-      "Crafted intuitive user interfaces, wireframes, and design specs."
-    ]
-  },
-  {
-    id: "exp-4",
-    role: "Jr UI/UX Designer",
+    role: "Jr. UX/UI Designer",
     company: "Creative Soft LTD",
-    period: "01/10/2024 to 30/01/2025",
+    period: "11 Nov 2024 – 31 Jan 2025",
     location: "Dhaka, Bangladesh",
-    description: "Assisted in UI design, visual assets, wireframing, and interactive prototype development.",
-    achievements: [
-      "Designed responsive UI layouts and component libraries."
-    ]
+    statusTag: "Previous",
+    isCurrent: false,
+    summary:
+      "As a Jr. UI/UX Designer at Creative Soft Limited, I contribute to designing user-friendly web and mobile experiences. I create user flows, wireframes, prototypes, and high-fidelity UI designs while collaborating with designers, developers, project managers, and clients. I also incorporate feedback, maintain design consistency, and support usability improvements throughout the product development process.",
+    description:
+      "As a Jr. UI/UX Designer, I contribute to designing intuitive, user-friendly, and visually engaging digital experiences for web and mobile applications. My responsibilities include understanding project requirements, conducting basic user research, creating user flows, wireframes, prototypes, and high-fidelity UI designs. I collaborate with senior designers, project managers, clients, and developers to translate requirements into effective design solutions. I also maintain design consistency, incorporate feedback, review implemented designs, support usability improvements, and continuously develop my skills by following current UI/UX trends and best practices."
   }
 ];
 

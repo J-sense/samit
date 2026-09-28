@@ -57,7 +57,10 @@ export default function AboutSection() {
             {/* Download CV CTA Button */}
             <div className="pt-2">
               <a
-                href="#contact"
+                href="/My Resume.pdf"
+                download="My_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#7127BA] text-white shadow-xl shadow-[#7127BA]/30 hover:bg-[#611fb3] transition-all"
               >
                 <span>DOWNLOAD CV</span>
