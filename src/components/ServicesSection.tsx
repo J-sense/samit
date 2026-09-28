@@ -1,24 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 
 export default function ServicesSection() {
   return (
     <section id="services" className="relative py-20 bg-[#010208] overflow-hidden">
-      {/* Scroll Down Indicator */}
-      <div className="flex flex-col items-center justify-center mb-16 space-y-1 relative z-10">
-        <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#9b85c1]">
-          SCROLL
-        </span>
-        <motion.div
-          animate={{ y: [0, 5, 0] }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <ChevronDown className="w-3.5 h-3.5 text-[#9b85c1]" />
-        </motion.div>
-      </div>
-
       {/* Central Purple Glow Overlay */}
       <div
         className="absolute top-[120px] left-1/2 -translate-x-1/2 w-[650px] h-[500px] rounded-full blur-[110px] pointer-events-none z-0 opacity-85"

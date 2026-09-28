@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative pt-12 pb-20 sm:pt-36 sm:pb-28 min-h-[95vh] flex items-center bg-[#010208] overflow-hidden">
+    <section id="hero" className="relative pt-12 pb-20 sm:pt-1 sm:pb-28 min-h-[95vh] flex items-center bg-[#010208] overflow-hidden">
       {/* Top Left Corner Soft Ambient Glow */}
       <div
         className="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-[650px] h-[650px] rounded-full blur-[140px] pointer-events-none z-0"
@@ -113,33 +113,24 @@ export default function HeroSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#010208] via-[#010208]/30 to-transparent pointer-events-none" />
               </div>
-
-              {/* Floating Badge 1 (Bottom Left) */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                whileHover={{ scale: 1.05 }}
-                className="absolute left-[-20px] bottom-[10%] figma-card px-5 py-3 rounded-2xl shadow-xl border border-white/10"
-              >
-                <div className="text-xl font-black text-white">30+</div>
-                <div className="text-[11px] text-slate-400 font-medium">Projects Done</div>
-              </motion.div>
-
-              {/* Floating Badge 2 (Right Middle) */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.7 }}
-                whileHover={{ scale: 1.05 }}
-                className="absolute right-[-20px] top-[40%] figma-card px-5 py-3 rounded-2xl shadow-xl border border-white/10"
-              >
-                <div className="text-xl font-black text-white">2 yrs</div>
-                <div className="text-[11px] text-slate-400 font-medium">Experience</div>
-              </motion.div>
             </motion.div>
           </div>
         </div>
+      </div>
+
+      {/* Scroll Down Indicator */}
+      <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center space-y-1 z-20">
+        <a href="#services" className="flex flex-col items-center justify-center space-y-1 group cursor-pointer" aria-label="Scroll to services">
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#9b85c1] group-hover:text-purple-300 transition-colors">
+            SCROLL
+          </span>
+          <motion.div
+            animate={{ y: [0, 5, 0] }}
+            transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <ChevronDown className="w-3.5 h-3.5 text-[#9b85c1] group-hover:text-purple-300 transition-colors" />
+          </motion.div>
+        </a>
       </div>
     </section>
   );
