@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 
-const skillBulletsCol1 = ["Figma", "Prototyping", "Wireframing"];
-const skillBulletsCol2 = ["Adobe XD", "User Research", "Design Systems"];
+const skillBulletsCol1 = ["Figma", "FigJam", "Adobe Photoshop", "Adobe Illustrator"];
+const skillBulletsCol2 = ["Adobe XD", "Zeplin", "Framer"];
 
 export default function AboutSection() {
   return (

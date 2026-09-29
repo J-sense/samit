@@ -28,7 +28,7 @@ export default function ProjectsSection() {
     <section id="projects" className="relative py-24 bg-[#010208] overflow-hidden">
       {/* Background Purple Radial Glow */}
       <div
-        className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] rounded-full blur-[110px] pointer-events-none z-0 opacity-85"
+        className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] rounded-full blur-[110px] pointer-events-none z-0 opacity-85"
         style={{
           background:
             "radial-gradient(ellipse at center, rgba(113, 39, 186, 0.85) 0%, #7127BA 45%, rgba(113, 39, 186, 0.25) 75%, transparent 90%)",

@@ -44,11 +44,9 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg sm:text-2xl text-slate-400 max-w-xl font-light leading-relaxed"
+              className="text-lg sm:text-2xl text-slate-400 max-w-5xl font-light leading-relaxed"
             >
-              I&apos;m a designer specialising in{" "}
-              <strong className="text-white font-bold">UI/UX</strong> and{" "}
-              <strong className="text-white font-bold">Interaction Design</strong>
+              I&apos;m a <strong className="text-white font-bold">UI/UX &amp; Interaction</strong> Designer creating intuitive, engaging, and user-centered digital experiences.
             </motion.p>
 
             {/* Action Buttons */}
