@@ -125,14 +125,14 @@ export default function ExperienceSection() {
                             </p>
 
                             {item.achievements && item.achievements.length > 0 && (
-                              <ul className="space-y-1.5 pt-1">
+                              <div className="space-y-2 pt-2 flex flex-col">
                                 {item.achievements.map((ach, aIdx) => (
-                                  <li key={aIdx} className="text-xs text-slate-400 flex items-start gap-2">
-                                    <CheckCircle className="w-3.5 h-3.5 text-emerald-400 mt-0.5 shrink-0" />
-                                    <span>{ach}</span>
-                                  </li>
+                                  <div key={aIdx} className="inline-flex items-start sm:items-center gap-2.5 px-4 py-2.5 rounded-3xl border border-slate-700/80 bg-[#0c0e14]/50">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-[#00e5ff] shrink-0 mt-1.5 sm:mt-0" />
+                                    <span className="text-[10px] sm:text-xs font-bold text-slate-300 uppercase tracking-wider leading-relaxed">{ach}</span>
+                                  </div>
                                 ))}
-                              </ul>
+                              </div>
                             )}
                           </motion.div>
                         )}

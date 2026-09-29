@@ -90,20 +90,32 @@ export const experiencesData: ExperienceItem[] = [
     summary:
       "Designing intuitive, user-friendly, and visually engaging digital experiences for web and mobile applications.",
     description:
-      "As a UI/UX Designer, I am responsible for designing intuitive, user-friendly, and visually engaging digital experiences for web and mobile applications. My responsibilities include understanding project requirements, conducting user research, creating user flows, wireframes, prototypes, and high-fidelity UI designs. I work closely with clients, project managers, and developers to translate business requirements into effective design solutions and ensure accurate design implementation. I also maintain design consistency, improve usability, review implemented interfaces, incorporate feedback, and stay updated with the latest UI/UX trends and best practices to continuously enhance the overall user experience."
+      "As a UI/UX Designer, I am responsible for designing intuitive, user-friendly, and visually engaging digital experiences for web and mobile applications. My responsibilities include understanding project requirements, conducting user research, creating user flows, wireframes, prototypes, and high-fidelity UI designs. I work closely with clients, project managers, and developers to translate business requirements into effective design solutions and ensure accurate design implementation. I also maintain design consistency, improve usability, review implemented interfaces, incorporate feedback, and stay updated with the latest UI/UX trends and best practices to continuously enhance the overall user experience.",
+    achievements: [
+      "User Research, User Flow & Information Architecture",
+      "Wireframing, Prototyping & High-Fidelity UI Design",
+      "Responsive Web Design & Mobile App Design",
+      "Visual Design, Interaction Design & Design Thinking"
+    ]
   },
   {
     id: "exp-2",
-    role: "UI/UX Designer",
+    role: "Jr. UI/UX Designer",
     company: "Join Venture AI",
-    period: "01 Feb 2025 - 28 Feb 2026",
+    period: "01 Feb 2025 - 1 Feb 2026",
     location: "Dhaka, Bangladesh",
     statusTag: "Previous",
     isCurrent: false,
     summary:
       "Created high-fidelity designs, interactive prototypes, and design systems for web & mobile applications.",
     description:
-      "Created high-fidelity designs, interactive prototypes, and design systems for web & mobile apps. Conducted user interface reviews, component library management, and collaborated closely with cross-functional development teams to deliver intuitive digital products."
+      "As a Jr. UI/UX Designer at Creative Soft Limited, I contribute to designing user-friendly web and mobile experiences. I create user flows, wireframes, prototypes, and high-fidelity UI designs while collaborating with designers, developers, project managers, and clients. I also incorporate feedback, maintain design consistency, and support usability improvements throughout the product development process.",
+    achievements: [
+      "User Research, User Flow & Information Architecture",
+      "Wireframing, Prototyping & High-Fidelity UI Design",
+      "Responsive Web Design & Mobile App Design",
+      "Visual Design, Interaction Design & Design Thinking"
+    ]
   },
   {
     id: "exp-3",
@@ -116,7 +128,13 @@ export const experiencesData: ExperienceItem[] = [
     summary:
       "As a Jr. UI/UX Designer at Creative Soft Limited, I contribute to designing user-friendly web and mobile experiences. I create user flows, wireframes, prototypes, and high-fidelity UI designs while collaborating with designers, developers, project managers, and clients. I also incorporate feedback, maintain design consistency, and support usability improvements throughout the product development process.",
     description:
-      "As a Jr. UI/UX Designer, I contribute to designing intuitive, user-friendly, and visually engaging digital experiences for web and mobile applications. My responsibilities include understanding project requirements, conducting basic user research, creating user flows, wireframes, prototypes, and high-fidelity UI designs. I collaborate with senior designers, project managers, clients, and developers to translate requirements into effective design solutions. I also maintain design consistency, incorporate feedback, review implemented designs, support usability improvements, and continuously develop my skills by following current UI/UX trends and best practices."
+      "As a Jr. UI/UX Designer at Creative Soft Limited, I contribute to designing user-friendly web and mobile experiences. I create user flows, wireframes, prototypes, and high-fidelity UI designs while collaborating with designers, developers, project managers, and clients. I also incorporate feedback, maintain design consistency, and support usability improvements throughout the product development process.",
+    achievements: [
+      "User Research, User Flow & Information Architecture",
+      "Wireframing, Prototyping & High-Fidelity UI Design",
+      "Responsive Web Design & Mobile App Design",
+      "Visual Design, Interaction Design & Design Thinking"
+    ]
   }
 ];
 
